@@ -1,0 +1,48 @@
+* Brainstorming for data and kategorization structure
+
+** Approach by Nauta et al.
+
+*** Paper Selection 
+- Literature from 2014-2020
+- 12 conferences
+- Query: explain*|explanat*|interpret*
+- Serach on 04.05.2021: 606 Results
+- Without workshop papers and tutorials: 494
+- After inclusion criterion 361: 
+#+BEGIN_QUOTE
+Original work introducing, applying, and/or evaluating one or more methods for explaining a machine
+learning model.
+#+END_QUOTE
+- only papers that introduce a new xai technique: 312
+  - the reduced 49 papers were still concidered for evaluation metrics
+
+*** Categorization of the papers
+There were 6 dimensions for paper categorization:
+- Type of data (for us it will be time series only)
+- Type of predictive model
+- Type of method used for explanation
+- Type of explanation
+- Type of problem
+- Type of task
+
+*** XAI Explanation Quality Properties:
+The authors defined 12 quality properties to be examined:
+- Correceness
+- Completeness
+- Consistency
+- Continuity
+- Contrastivity
+- Covariate complexity
+- Compacteness
+- Composition
+- Confidence
+- Context
+- Coherence
+- Controllability
+
+
+
+
+
+
+** 

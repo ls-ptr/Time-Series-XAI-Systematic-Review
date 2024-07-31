@@ -1,0 +1,1603 @@
+[
+  {
+    "Paper-ID": "icml/Wang19",
+    "Title": "Gaining Free or Low-Cost Interpretability with Interpretable Partial Substitute.",
+    "url": "http://proceedings.mlr.press/v97/wang19a.html",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
+    "Authors": [
+      "Tong Wang"
+    ],
+    "Type of Data": [
+      "Tabular / structured",
+      "Text",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Explanation",
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network",
+      "Tree Ensemble",
+      "Any (for a specific task); model-agnostic"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Decision Rules"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "icdm/JiWJMZ20",
+    "Title": "Interpretable Spatiotemporal Deep Learning Model for Traffic Flow Prediction based on Potential Energy Fields.",
+    "url": "https://doi.org/10.1109/ICDM50108.2020.00128",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
+    "Authors": [
+      "Jiahao Ji",
+      "Jingyuan Wang",
+      "Zhe Jiang",
+      "Jingtian Ma",
+      "Hu Zhang"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Heatmap"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Traffic flow prediction is of great importance in traffic management and public safety, but is challenging due to the complex spatial-temporal dependencies as well as temporal dynamics. Existing work either focuses on traditional statistical models, which have limited prediction accuracy, or relies on black-box deep learning models, which have superior prediction accuracy but are hard to interpret. In contrast, we propose a novel interpretable spatiotemporal deep learning model for traffic flow prediction. Our main idea is to model the physics of traffic flow through a number of latent Spatio-Temporal Potential Energy Fields (ST-PEFs), similar to water flow driven by the gravity field. We develop a Wind field Decomposition (WD) algorithm to decompose traffic flow into poly-tree components so that ST-PEFs can be established. We then design a spatiotemporal deep learning model for the ST-PEFs, which consists of a temporal component (modeling the temporal correlation) and a spatial component (modeling the spatial dependencies). To the best of our knowledge, this is the first work that make traffic flow prediction based on ST-PEFs. Experimental results on real-world traffic datasets show the effectiveness of our model compared to the existing methods. A case study confirms our model interpretability.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "iclr/OreshkinCCB20",
+    "Title": "N-BEATS - Neural basis expansion analysis for interpretable time series forecasting.",
+    "url": "https://openreview.net/forum?id=r1ecqn4YwB",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
+    "Authors": [
+      "Boris N. Oreshkin",
+      "Dmitri Carpov",
+      "Nicolas Chapados",
+      "Yoshua Bengio"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Inspection"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "Feature plot"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/LiangBCBW20",
+    "Title": "Adversarial Infidelity Learning for Model Interpretation.",
+    "url": "https://doi.org/10.1145/3394486.3403071",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Jian Liang",
+      "Bing Bai",
+      "Yuren Cao",
+      "Kun Bai",
+      "Fei Wang"
+    ],
+    "Type of Data": [
+      "Images",
+      "Text",
+      "Time series",
+      "Any"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network",
+      "Any (for a specific task); model-agnostic"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Localization"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Model interpretation is essential in data mining and knowledge discovery. It can help understand the intrinsic model working mechanism and check if the model has undesired characteristics. A popular way of performing model interpretation is Instance-wise Feature Selection (IFS), which provides an importance score of each feature representing the data samples to explain how the model generates the specific output. In this paper, we propose a Model-agnostic Effective Efficient Direct (MEED) IFS framework for model interpretation, mitigating concerns about sanity, combinatorial shortcuts, model identifiability, and information transmission. Also, we focus on the following setting: using selected features to directly predict the output of the given model, which serves as a primary evaluation metric for model-interpretation methods. Apart from the features, we involve the output of the given model as an additional input to learn an explainer based on more accurate information. To learn the explainer, besides fidelity, we propose an Adversarial Infidelity Learning (AIL) mechanism to boost the explanation learning by screening relatively unimportant features. Through theoretical and experimental analysis, we show that our AIL mechanism can help learn the desired conditional distribution between selected features and targets. Moreover, we extend our framework by integrating efficient interpretation methods as proper priors to provide a warm start. Comprehensive empirical evaluation results are provided by quantitative metrics and human evaluation to demonstrate the effectiveness and superiority of our proposed method. Our code is publicly available online at https://github.com/langlrsw/MEED.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/ZhangQ0LCZD20",
+    "Title": "INPREM - An Interpretable and Trustworthy Predictive Model for Healthcare.",
+    "url": "https://doi.org/10.1145/3394486.3403087",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Xianli Zhang",
+      "Buyue Qian",
+      "Shilei Cao",
+      "Yang Li",
+      "Hang Chen",
+      "Yefeng Zheng",
+      "Ian Davidson"
+    ],
+    "Type of Data": [
+      "Tabular / structured",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Feature plot"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Building a predictive model based on historical Electronic Health Records (EHRs) for personalized healthcare has become an active research area. Benefiting from the powerful ability of feature extraction, deep learning (DL) approaches have achieved promising performance in many clinical prediction tasks. However, due to the lack of interpretability and trustworthiness, it is difficult to apply DL in real clinical cases of decision making. To address this, in this paper, we propose an interpretable and trustworthy predictive model~(INPREM) for healthcare. Firstly, INPREM is designed as a linear model for interpretability while encoding non-linear relationships into the learning weights for modeling the dependencies between and within each visit. This enables us to obtain the contribution matrix of the input variables, which is served as the evidence of the prediction result(s), and help physicians understand why the model gives such a prediction, thereby making the model more interpretable. Secondly, for trustworthiness, we place a random gate (which follows a Bernoulli distribution to turn on or off) over each weight of the model, as well as an additional branch to estimate data noises. With the help of the Monto Carlo sampling and an objective function accounting for data noises, the model can capture the uncertainty of each prediction. The captured uncertainty, in turn, allows physicians to know how confident the model is, thus making the model more trustworthy. We empirically demonstrate that the proposed INPREM outperforms existing approaches with a significant margin. A case study is also presented to show how the contribution matrix and the captured uncertainty are used to assist physicians in making robust decisions.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "nips/ArikLYSELM0ZNSN20",
+    "Title": "Interpretable Sequence Learning for Covid-19 Forecasting.",
+    "url": "https://proceedings.neurips.cc/paper/2020/hash/d9dbc51dc534921589adf460c85cd824-Abstract.html",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
+    "Authors": [
+      "Sercan Ömer Arik",
+      "Chun-Liang Li",
+      "Jinsung Yoon",
+      "Rajarishi Sinha",
+      "Arkady Epshteyn",
+      "Long T. Le",
+      "Vikas Menon",
+      "Shashank Singh",
+      "Leyou Zhang",
+      "Martin Nikoltchev",
+      "Yash Sonthalia",
+      "Hootan Nakhost",
+      "Elli Kanal",
+      "Tomas Pfister"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Transparent Box Design"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "White-box model"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "nips/FryeRF20",
+    "Title": "Asymmetric Shapley values - incorporating causal knowledge into model-agnostic explainability.",
+    "url": "https://proceedings.neurips.cc/paper/2020/hash/0d770c496aa3da6d2c3f2bd19e7b9d6b-Abstract.html",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
+    "Authors": [
+      "Christopher Frye",
+      "Colin Rowat",
+      "Ilya Feige"
+    ],
+    "Type of Data": [
+      "Tabular / structured",
+      "Time series",
+      "Any"
+    ],
+    "Type of Problem": [
+      "Model Inspection",
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Feature Importance"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "nips/HeskesSBC20",
+    "Title": "Causal Shapley Values - Exploiting Causal Knowledge to Explain Individual Predictions of Complex Models.",
+    "url": "https://proceedings.neurips.cc/paper/2020/hash/32e54441e6382a7fbacbbbaf3c450059-Abstract.html",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
+    "Authors": [
+      "Tom Heskes",
+      "Evi Sijben",
+      "Ioan Gabriel Bucur",
+      "Tom Claassen"
+    ],
+    "Type of Data": [
+      "Time series",
+      "Any"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "Any (for a specific task); model-agnostic"
+    ],
+    "Type of Task": [
+      "Classification",
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "Feature Importance"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "nips/JainVMLTH20",
+    "Title": "Interpretable multi-timescale models for predicting fMRI responses to continuous natural speech.",
+    "url": "https://proceedings.neurips.cc/paper/2020/hash/9e9a30b74c49d07d8150c8c83b1ccf07-Abstract.html",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
+    "Authors": [
+      "Shailee Jain",
+      "Vy A. Vo",
+      "Shivangi Mahto",
+      "Amanda LeBel",
+      "Javier S. Turek",
+      "Alexander Huth"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification",
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "Heatmap"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "nips/ZhouW20",
+    "Title": "Learning identifiable and interpretable latent models of high-dimensional neural activity using pi-VAE.",
+    "url": "https://proceedings.neurips.cc/paper/2020/hash/510f2318f324cf07fce24c3a4b89c771-Abstract.html",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
+    "Authors": [
+      "Ding Zhou",
+      "Xue-Xin Wei"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Other"
+    ],
+    "Type of Explanation": [
+      "Representation Visualization",
+      "Feature plot"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "www/WangZZSP20",
+    "Title": "DyCRS - Dynamic Interpretable Postoperative Complication Risk Scoring.",
+    "url": "https://doi.org/10.1145/3366423.3380253",
+    "Year": "2020",
+    "Venue": {
+      "isOld": true,
+      "value": "WWW"
+    },
+    "Authors": [
+      "Wen Wang",
+      "Han Zhao",
+      "Honglei Zhuang",
+      "Nirav Shah",
+      "Rema Padman"
+    ],
+    "Type of Data": [
+      "Tabular / structured",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Transparent Box Design"
+    ],
+    "Type of Model to be Explained": [
+      "Other"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "White-box model"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Early identification of patients at risk for postoperative complications can facilitate timely workups and treatments and improve health outcomes. Currently, a widely-used surgical risk calculator online web system developed by the American College of Surgeons (ACS) uses patients’ static features, e.g. gender, age, to assess the risk of postoperative complications. However, the most crucial signals that reflect the actual postoperative physical conditions of patients are usually real-time dynamic signals, including the vital signs of patients (e.g., heart rate, blood pressure) collected from postoperative monitoring. In this paper, we develop a dynamic postoperative complication risk scoring framework (DyCRS) to detect the “at-risk” patients in a real-time way based on postoperative sequential vital signs and static features. DyCRS is based on adaptations of the Hidden Markov Model (HMM) that captures hidden states as well as observable states to generate a real-time, probabilistic, complication risk score. Evaluating our model using electronic health record (EHR) on elective Colectomy surgery from a major health system, we show that DyCRS significantly outperforms the state-of-the-art ACS calculator and real-time predictors with 50.16% area under precision-recall curve (AUCPRC) gain on average in terms of detection effectiveness. In terms of earliness, our DyCRS can predict 15hrs55mins earlier on average than clinician’s diagnosis with the recall of 60% and precision of 55%. Furthermore, Our DyCRS can extract interpretable patients’ stages, which are consistent with previous medical postoperative complication studies. We believe that our contributions demonstrate significant promise for developing a more accurate, robust and interpretable postoperative complication risk scoring system, which can benefit more than 50 million annual surgeries in the US by substantially lowering adverse events and healthcare costs.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "aaai/HeLSB19",
+    "Title": "Interpretable Predictive Modeling for Climate Variables with Weighted Lasso.",
+    "url": "https://doi.org/10.1609/aaai.v33i01.33011385",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
+    "Authors": [
+      "Sijie He",
+      "Xinyan Li",
+      "Vidyashankar Sivakumar",
+      "Arindam Banerjee"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Transparent Box Design"
+    ],
+    "Type of Model to be Explained": [
+      "Other"
+    ],
+    "Type of Task": [
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "White-box model"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "An important family of problems in climate science focus on finding predictive relationships between various climate variables. In this paper, we consider the problem of predicting monthly deseasonalized land temperature at different locations worldwide based on sea surface temperature (SST). Contrary to popular belief on the trade-off between (a) simple interpretable but inaccurate models and (b) complex accurate but uninterpretable models, we introduce a weighted Lasso model for the problem which yields interpretable results while being highly accurate. Covariate weights in the regularization of weighted Lasso are pre-determined, and proportional to the spatial distance of the covariate (sea surface location) from the target (land location). We establish finite sample estimation error bounds for weighted Lasso, and illustrate its superior empirical performance and interpretability over complex models such as deep neural networks (Deep nets) and gradient boosted trees (GBT). We also present a detailed empirical analysis of what went wrong with Deep nets here, which may serve as a helpful guideline for application of Deep nets to small sample scientific problems.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "cvpr/ZengLSSYCU19",
+    "Title": "End-To-End Interpretable Neural Motion Planner.",
+    "url": "http://openaccess.thecvf.com/content_CVPR_2019/html/Zeng_End-To-End_Interpretable_Neural_Motion_Planner_CVPR_2019_paper.html",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "CVPR"
+    },
+    "Authors": [
+      "Wenyuan Zeng",
+      "Wenjie Luo",
+      "Simon Suo",
+      "Abbas Sadat",
+      "Bin Yang",
+      "Sergio Casas",
+      "Raquel Urtasun"
+    ],
+    "Type of Data": [
+      "Time series",
+      "Other"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Policy learning"
+    ],
+    "Type of Explanation": [
+      "Localization"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "In this paper, we propose a neural motion planner for learning to drive autonomously in complex urban scenarios that include traffic-light handling, yielding, and interactions with multiple road-users. Towards this goal, we design a holistic model that takes as input raw LIDAR data and a HD map and produces interpretable intermediate representations in the form of 3D detections and their future trajectories, as well as a cost volume defining the goodness of each position that the self-driving car can take within the planning horizon. We then sample a set of diverse physically possible trajectories and choose the one with the minimum learned cost. Importantly, our cost volume is able to naturally capture multi-modality. We demonstrate the effectiveness of our approach in real-world driving data captured in several cities in North America. Our experiments show that the learned cost volume can generate safer planning than all the baselines.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "icdm/AssafGBS19",
+    "Title": "MTEX-CNN - Multivariate Time Series EXplanations for Predictions with Convolutional Neural Networks.",
+    "url": "https://doi.org/10.1109/ICDM.2019.00106",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
+    "Authors": [
+      "Roy Assaf",
+      "Ioana Giurgiu",
+      "Frank Bagehorn",
+      "Anika Schumann"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Heatmap"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "In this work we present MTEX-CNN, a novel explainable convolutional neural network architecture which can not only be used for making predictions based on multivariate time series data, but also for explaining these predictions. The network architecture consists of two stages and utilizes particular kernel sizes. This allows us to apply gradient based methods for generating saliency maps for both the time dimension and the features. The first stage of the architecture explains which features are most significant to the predictions, while the second stage explains which time segments are the most significant. We validate our approach on two use cases, namely to predict rare server outages in the wild, as well as the average energy production of photovoltaic power plants based on a benchmark data set. We show that our explanations shed light over what the model has learned. We validate this by retraining the network using the most significant features extracted from the explanations and retaining similar performance to training with the full set of features.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "iclr/FortuinHLSR19",
+    "Title": "SOM-VAE - Interpretable Discrete Representation Learning on Time Series.",
+    "url": "https://openreview.net/forum?id=rygjcsR9Y7",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "ICLR"
+    },
+    "Authors": [
+      "Vincent Fortuin",
+      "Matthias Hüser",
+      "Francesco Locatello",
+      "Heiko Strathmann",
+      "Gunnar Rätsch"
+    ],
+    "Type of Data": [
+      "Images",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Inspection"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Representation learning",
+      "Clustering"
+    ],
+    "Type of Explanation": [
+      "Representation Visualization",
+      "Representation Synthesis"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "icml/0002LA19",
+    "Title": "Exploring interpretable LSTM neural networks over multi-variable data.",
+    "url": "http://proceedings.mlr.press/v97/guo19b.html",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
+    "Authors": [
+      "Tian Guo",
+      "Tao Lin",
+      "Nino Antulov-Fantulin"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Inspection"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "Feature Importance",
+      "Heatmap"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "icml/DunckerBBS19",
+    "Title": "Learning interpretable continuous-time models of latent stochastic dynamical systems.",
+    "url": "http://proceedings.mlr.press/v97/duncker19a.html",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
+    "Authors": [
+      "Lea Duncker",
+      "Gergo Bohner",
+      "Julien Boussard",
+      "Maneesh Sahani"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Inspection"
+    ],
+    "Type of Model to be Explained": [
+      "Bayesian or Hierarchical Network"
+    ],
+    "Type of Task": [
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "Representation Visualization",
+      "Feature plot"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "ijcai/LiYYJ19",
+    "Title": "Learning Interpretable Deep State Space Model for Probabilistic Time Series Forecasting.",
+    "url": "https://doi.org/10.24963/ijcai.2019/402",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "IJCAI"
+    },
+    "Authors": [
+      "Longyuan Li",
+      "Junchi Yan",
+      "Xiaokang Yang",
+      "Yaohui Jin"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Inspection"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "Feature Importance"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Probabilistic time series forecasting involves estimating the distribution of future based on its history, which is essential for risk management in downstream decision-making. We propose a deep state space model for probabilistic time series forecasting whereby the non-linear emission model and transition model are parameterized by networks and the dependency is modeled by recurrent neural nets. We take the automatic relevance determination (ARD) view and devise a network to exploit the exogenous variables in addition to time series. In particular, our ARD network can incorporate the uncertainty of the exogenous variables and eventually helps identify useful exogenous variables and suppress those irrelevant for forecasting. The distribution of multi-step ahead forecasts are approximated by Monte Carlo simulation. We show in experiments that our model produces accurate and sharp probabilistic forecasts. The estimated uncertainty of our forecasting also realistically increases over time, in a spontaneous manner.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/MingXQR19",
+    "Title": "Interpretable and Steerable Sequence Learning via Prototypes.",
+    "url": "https://doi.org/10.1145/3292500.3330908",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Yao Ming",
+      "Panpan Xu",
+      "Huamin Qu",
+      "Liu Ren"
+    ],
+    "Type of Data": [
+      "Text",
+      "Time series",
+      "Other"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation",
+      "Transparent Box Design"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Prototypes"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "One of the major challenges in machine learning nowadays is to provide predictions with not only high accuracy but also user-friendly explanations. Although in recent years we have witnessed increasingly popular use of deep neural networks for sequence modeling, it is still challenging to explain the rationales behind the model outputs, which is essential for building trust and supporting the domain experts to validate, critique and refine the model. We propose ProSeNet, an interpretable and steerable deep sequence model with natural explanations derived from case-based reasoning. The prediction is obtained by comparing the inputs to a few prototypes, which are exemplar cases in the problem domain. For better interpretability, we define several criteria for constructing the prototypes, including simplicity, diversity, and sparsity and propose the learning objective and the optimization procedure. ProSeNet also provides a user-friendly approach to model steering: domain experts without any knowledge on the underlying model or parameters can easily incorporate their intuition and experience by manually refining the prototypes. We conduct experiments on a wide range of real-world applications, including predictive diagnostics for automobiles, ECG, and protein sequence classification and sentiment analysis on texts. The result shows that ProSeNet can achieve accuracy on par with state-of-the-art deep learning models. We also evaluate the interpretability of the results with concrete case studies. Finally, through user study on Amazon Mechanical Turk (MTurk), we demonstrate that the model selects high-quality prototypes which align well with human knowledge and can be interactively refined for better interpretability without loss of performance.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/Tao0WFYZ019",
+    "Title": "Log2Intent - Towards Interpretable User Modeling via Recurrent Semantics Memory Unit.",
+    "url": "https://doi.org/10.1145/3292500.3330889",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Zhiqiang Tao",
+      "Sheng Li",
+      "Zhaowen Wang",
+      "Chen Fang",
+      "Longqi Yang",
+      "Handong Zhao",
+      "Yun Fu"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Text"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model",
+      "Supervised explanation training"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/YanZDSSK19",
+    "Title": "GroupINN - Grouping-based Interpretable Neural Network for Classification of Limited, Noisy Brain Data.",
+    "url": "https://doi.org/10.1145/3292500.3330921",
+    "Year": "2019",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Yujun Yan",
+      "Jiong Zhu",
+      "Marlena Duda",
+      "Eric Solarz",
+      "Chandra Sekhar Sripada",
+      "Danai Koutra"
+    ],
+    "Type of Data": [
+      "Images",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Graph",
+      "Heatmap"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "aaai/WuHPZ0D18",
+    "Title": "Beyond Sparsity - Tree Regularization of Deep Models for Interpretability.",
+    "url": "https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16285",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "AAAI"
+    },
+    "Authors": [
+      "Mike Wu",
+      "Michael C. Hughes",
+      "Sonali Parbhoo",
+      "Maurizio Zazzi",
+      "Volker Roth",
+      "Finale Doshi-Velez"
+    ],
+    "Type of Data": [
+      "Tabular / structured",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Decision Tree"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method",
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "acl/MorencyCPLZ18",
+    "Title": "Multimodal Language Analysis in the Wild - CMU-MOSEI Dataset and Interpretable Dynamic Fusion Graph.",
+    "url": "https://www.aclweb.org/anthology/P18-1208/",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
+    "Authors": [
+      "Amir Zadeh",
+      "Paul Pu Liang",
+      "Soujanya Poria",
+      "Erik Cambria",
+      "Louis-Philippe Morency"
+    ],
+    "Type of Data": [
+      "Text",
+      "Video",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Feature Importance",
+      "Feature plot"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Analyzing human multimodal language is an emerging area of research in NLP. Intrinsically this language is multimodal (heterogeneous), sequential and asynchronous; it consists of the language (words), visual (expressions) and acoustic (paralinguistic) modalities all in the form of asynchronous coordinated sequences. From a resource perspective, there is a genuine need for large scale datasets that allow for in-depth studies of this form of language. In this paper we introduce CMU Multimodal Opinion Sentiment and Emotion Intensity (CMU-MOSEI), the largest dataset of sentiment analysis and emotion recognition to date. Using data from CMU-MOSEI and a novel multimodal fusion technique called the Dynamic Fusion Graph (DFG), we conduct experimentation to exploit how modalities interact with each other in human multimodal language. Unlike previously proposed fusion techniques, DFG is highly interpretable and achieves competative performance when compared to the previous state of the art.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "icdm/KarlssonRPG18",
+    "Title": "Explainable Time Series Tweaking via Irreversible and Reversible Temporal Transformations.",
+    "url": "https://doi.org/10.1109/ICDM.2018.00036",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "ICDM"
+    },
+    "Authors": [
+      "Isak Karlsson",
+      "Jonathan Rebane",
+      "Panagiotis Papapetrou",
+      "Aristides Gionis"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "Tree Ensemble"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Representation Synthesis"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Time series classification has received great attention over the past decade with a wide range of methods focusing on predictive performance by exploiting various types of temporal features. Nonetheless, little emphasis has been placed on interpretability and explainability. In this paper, we formulate the novel problem of explainable time series tweaking, where, given a time series and an opaque classifier that provides a particular classification decision for the time series, we want to find the minimum number of changes to be performed to the given time series so that the classifier changes its decision to another class. We show that the problem is NP-hard, and focus on two instantiations of the problem, which we refer to as reversible and irreversible time series tweaking. The classifier under investigation is the random shapelet forest classifier. Moreover, we propose two algorithmic solutions for the two problems along with simple optimizations, as well as a baseline solution using the nearest neighbor classifier. An extensive experimental evaluation on a variety of real datasets demonstrates the usefulness and effectiveness of our problem formulation and solutions.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "icml/AinsworthFLF18",
+    "Title": "oi-VAE - Output Interpretable VAEs for Nonlinear Group Factor Analysis.",
+    "url": "http://proceedings.mlr.press/v80/ainsworth18a.html",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
+    "Authors": [
+      "Samuel K. Ainsworth",
+      "Nicholas J. Foti",
+      "Adrian K. C. Lee",
+      "Emily B. Fox"
+    ],
+    "Type of Data": [
+      "Images",
+      "Video",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Inspection"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Generation"
+    ],
+    "Type of Explanation": [
+      "Disentanglement"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "icml/VermaMSKC18",
+    "Title": "Programmatically Interpretable Reinforcement Learning.",
+    "url": "http://proceedings.mlr.press/v80/verma18a.html",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
+    "Authors": [
+      "Abhinav Verma",
+      "Vijayaraghavan Murali",
+      "Rishabh Singh",
+      "Pushmeet Kohli",
+      "Swarat Chaudhuri"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Policy learning"
+    ],
+    "Type of Explanation": [
+      "Decision Rules"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/BaiZEV18",
+    "Title": "Interpretable Representation Learning for Healthcare via Capturing Disease Progression through Time.",
+    "url": "https://doi.org/10.1145/3219819.3219904",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Tian Bai",
+      "Shanshan Zhang",
+      "Brian L. Egleston",
+      "Slobodan Vucetic"
+    ],
+    "Type of Data": [
+      "Text",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Inspection",
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Feature Importance"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Various deep learning models have recently been applied to predictive modeling of Electronic Health Records (EHR). In medical claims data, which is a particular type of EHR data, each patient is represented as a sequence of temporally ordered irregularly sampled visits to health providers, where each visit is recorded as an unordered set of medical codes specifying patient's diagnosis and treatment provided during the visit. Based on the observation that different patient conditions have different temporal progression patterns, in this paper we propose a novel interpretable deep learning model, called Timeline. The main novelty of Timeline is that it has a mechanism that learns time decay factors for every medical code. This allows the Timeline to learn that chronic conditions have a longer lasting impact on future visits than acute conditions. Timeline also has an attention mechanism that improves vector embeddings of visits. By analyzing the attention weights and disease progression functions of Timeline, it is possible to interpret the predictions and understand how risks of future visits change over time. We evaluated Timeline on two large-scale real world data sets. The specific task was to predict what is the primary diagnosis category for the next hospital visit given previous visits. Our results show that Timeline has higher accuracy than the state of the art deep learning models based on RNN. In addition, we demonstrate that time decay factors and attentions learned by Timeline are in accord with the medical knowledge and that Timeline can provide a useful insight into its predictions.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/Janakiraman18",
+    "Title": "Explaining Aviation Safety Incidents Using Deep Temporal Multiple Instance Learning.",
+    "url": "https://doi.org/10.1145/3219819.3219871",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Vijay Manikandan Janakiraman"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Localization",
+      "Text"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Although aviation accidents are rare, safety incidents occur more frequently and require a careful analysis to detect and mitigate risks in a timely manner. Analyzing safety incidents using operational data and producing event-based explanations is invaluable to airline companies as well as to governing organizations such as the Federal Aviation Administration (FAA) in the United States. However, this task is challenging because of the complexity involved in mining multi-dimensional heterogeneous time series data, the lack of time-step-wise annotation of events in a flight, and the lack of scalable tools to perform analysis over a large number of events. In this work, we propose a precursor mining algorithm that identifies events in the multidimensional time series that are correlated with the safety incident. Precursors are valuable to systems health and safety monitoring and in explaining and forecasting safety incidents. Current methods suffer from poor scalability to high dimensional time series data and are inefficient in capturing temporal behavior. We propose an approach by combining multiple-instance learning (MIL) and deep recurrent neural networks (DRNN) to take advantage of MIL's ability to learn using weakly supervised data and DRNN's ability to model temporal behavior. We describe the algorithm, the data, the intuition behind taking a MIL approach, and a comparative analysis of the proposed algorithm with baseline models. We also discuss the application to a real-world aviation safety problem using data from a commercial airline company and discuss the model's abilities and shortcomings, with some final remarks about possible deployment directions.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/WangWLW18",
+    "Title": "Multilevel Wavelet Decomposition Network for Interpretable Time Series Analysis.",
+    "url": "https://doi.org/10.1145/3219819.3220060",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Jingyuan Wang",
+      "Ze Wang",
+      "Jianfeng Li",
+      "Junjie Wu"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Inspection"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification",
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "Heatmap"
+    ],
+    "Method used to explain": [
+      "Post-hoc explanation method"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Recent years have witnessed the unprecedented rising of time series from almost all kindes of academic and industrial fields. Various types of deep neural network models have been introduced to time series analysis, but the important frequency information is yet lack of effective modeling. In light of this, in this paper we propose a wavelet-based neural network structure called multilevel Wavelet Decomposition Network (mWDN) for building frequency-aware deep learning models for time series analysis. mWDN preserves the advantage of multilevel discrete wavelet decomposition in frequency learning while enables the fine-tuning of all parameters under a deep neural network framework. Based on mWDN, we further propose two deep learning models called Residual Classification Flow (RCF) and multi-frequecy Long Short-Term Memory (mLSTM) for time series classification and forecasting, respectively. The two models take all or partial mWDN decomposed sub-series in different frequencies as input, and resort to the back propagation algorithm to learn all the parameters globally, which enables seamless embedding of wavelet-based frequency analysis into deep learning frameworks. Extensive experiments on 40 UCR datasets and a real-world user volume dataset demonstrate the excellent performance of our time series models based on mWDN. In particular, we propose an importance analysis method to mWDN based models, which successfully identifies those time-series elements and mWDN layers that are crucially important to time series analysis. This indeed indicates the interpretability advantage of mWDN, and can be viewed as an indepth exploration to interpretable deep learning.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/YangSJ018",
+    "Title": "I Know You'll Be Back - Interpretable New User Clustering and Churn Prediction on a Mobile Social Application.",
+    "url": "https://doi.org/10.1145/3219819.3219821",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Carl Yang",
+      "Xiaolin Shi",
+      "Luo Jie",
+      "Jiawei Han"
+    ],
+    "Type of Data": [
+      "Time series",
+      "Graph data"
+    ],
+    "Type of Problem": [
+      "Model Inspection"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Clustering",
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Feature Importance",
+      "Representation Visualization"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "As online platforms are striving to get more users, a critical challenge is user churn, which is especially concerning for new users. In this paper, by taking the anonymous large-scale real-world data from Snapchat as an example, we develop ClusChurn , a systematic two-step framework for interpretable new user clustering and churn prediction, based on the intuition that proper user clustering can help understand and predict user churn. Therefore, ClusChurn firstly groups new users into interpretable typical clusters, based on their activities on the platform and ego-network structures. Then we design a novel deep learning pipeline based on LSTM and attention to accurately predict user churn with very limited initial behavior data, by leveraging the correlations among users' multi- dimensional activities and the underlying user types. ClusChurn is also able to predict user types, which enables rapid reactions to different types of user churn. Extensive data analysis and experiments show that ClusChurn provides valuable insight into user behaviors, and achieves state-of-the-art churn prediction performance. The whole framework is deployed as a data analysis pipeline, delivering real-time data analysis and prediction results to multiple relevant teams for business intelligence uses. It is also general enough to be readily adopted by any online systems with user behavior data.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/ZangC018",
+    "Title": "Learning and Interpreting Complex Distributions in Empirical Data.",
+    "url": "https://doi.org/10.1145/3219819.3220073",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Chengxi Zang",
+      "Peng Cui",
+      "Wenwu Zhu"
+    ],
+    "Type of Data": [
+      "Tabular / structured",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Transparent Box Design"
+    ],
+    "Type of Model to be Explained": [
+      "Other"
+    ],
+    "Type of Task": [
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "White-box model"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "To fit empirical data distributions and then interpret them in a generative way is a common research paradigm to understand the structure and dynamics underlying the data in various disciplines. However, previous works mainly attempt to fit or interpret empirical data distributions in a case-by-case way. Faced with complex data distributions in the real world, can we fit and interpret them by a unified but parsimonious parametric model? In this paper, we view the complex empirical data as being generated by a dynamic system which takes uniform randomness as input. By modeling the generative dynamics of data, we showcase a four-parameter dynamic model together with inference and simulation algorithms, which is able to fit and generate a family of distributions, ranging from Gaussian, Exponential, Power Law, Stretched Exponential (Weibull), to their complex variants with multi-scale complexities. Rather than a black box, our model can be interpreted by a unified differential equation, which captures the underlying generative dynamics. More powerful models can be constructed by our framework in a principled way. We validate our model by various synthetic datasets. We then apply our model to $16$ real-world datasets from different disciplines. We show the systematic biases of fitting these datasets by the most widely used methods and show the superiority of our model. In short, our model potentially provides a framework to fit complex distributions in empirical data, and more importantly, to understand their generative mechanisms.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "nips/HeoLKLKYH18",
+    "Title": "Uncertainty-Aware Attention for Reliable Interpretation and Prediction.",
+    "url": "https://proceedings.neurips.cc/paper/2018/hash/285e19f20beded7d215102b49d5c09a0-Abstract.html",
+    "Year": "2018",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
+    "Authors": [
+      "Jay Heo",
+      "Haebeom Lee",
+      "Saehoon Kim",
+      "Juho Lee",
+      "Kwang Joon Kim",
+      "Eunho Yang",
+      "Sung Ju Hwang"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Feature Importance"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "icml/DempseyMSDGMR17",
+    "Title": "iSurvive - An Interpretable, Event-time Prediction Model for mHealth.",
+    "url": "http://proceedings.mlr.press/v70/dempsey17a.html",
+    "Year": "2017",
+    "Venue": {
+      "isOld": true,
+      "value": "ICML"
+    },
+    "Authors": [
+      "Walter H. Dempsey",
+      "Alexander Moreno",
+      "Christy K. Scott",
+      "Michael L. Dennis",
+      "David H. Gustafson",
+      "Susan A. Murphy",
+      "James M. Rehg"
+    ],
+    "Type of Data": [
+      "Tabular / structured",
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Transparent Box Design"
+    ],
+    "Type of Model to be Explained": [
+      "Other"
+    ],
+    "Type of Task": [
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "White-box model"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "nips/HsuZG17",
+    "Title": "Unsupervised Learning of Disentangled and Interpretable Representations from Sequential Data.",
+    "url": "https://proceedings.neurips.cc/paper/2017/hash/0a0a0c8aaa00ade50f74a3f0ca981ed7-Abstract.html",
+    "Year": "2017",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
+    "Authors": [
+      "Wei-Ning Hsu",
+      "Yu Zhang",
+      "James R. Glass"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Inspection"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Representation learning"
+    ],
+    "Type of Explanation": [
+      "Disentanglement",
+      "Representation Synthesis"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "nips/ChoiBSKSS16",
+    "Title": "RETAIN - An Interpretable Predictive Model for Healthcare using Reverse Time Attention Mechanism.",
+    "url": "https://proceedings.neurips.cc/paper/2016/hash/231141b34c82aa95e48810a9d1b33a79-Abstract.html",
+    "Year": "2016",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
+    "Authors": [
+      "Edward Choi",
+      "Mohammad Taha Bahadori",
+      "Jimeng Sun",
+      "Joshua Kulas",
+      "Andy Schuetz",
+      "Walter F. Stewart"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Feature Importance"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "nips/LakkarajuL16",
+    "Title": "Confusions over Time - An Interpretable Bayesian Model to Characterize Trends in Decision Making.",
+    "url": "https://proceedings.neurips.cc/paper/2016/hash/97d0145823aeb8ed80617be62e08bdcc-Abstract.html",
+    "Year": "2016",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
+    "Authors": [
+      "Himabindu Lakkaraju",
+      "Jure Leskovec"
+    ],
+    "Type of Data": [
+      "Time series",
+      "User-item matrix"
+    ],
+    "Type of Problem": [
+      "Model Inspection"
+    ],
+    "Type of Model to be Explained": [
+      "Bayesian or Hierarchical Network"
+    ],
+    "Type of Task": [
+      "Classification",
+      "Clustering"
+    ],
+    "Type of Explanation": [
+      "Feature Importance",
+      "Prototypes"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "nips/ZhaoP16",
+    "Title": "Interpretable Nonlinear Dynamic Modeling of Neural Trajectories.",
+    "url": "https://proceedings.neurips.cc/paper/2016/hash/b2531e7bb29bf22e1daae486fae3417a-Abstract.html",
+    "Year": "2016",
+    "Venue": {
+      "isOld": true,
+      "value": "NeurIPS"
+    },
+    "Authors": [
+      "Yuan Zhao",
+      "Il Memming Park"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Model Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "(Deep) Neural Network"
+    ],
+    "Type of Task": [
+      "Regression"
+    ],
+    "Type of Explanation": [
+      "White-box model"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "sigir/ZhaoLRMYR16",
+    "Title": "Explainable User Clustering in Short Text Streams.",
+    "url": "https://doi.org/10.1145/2911451.2911522",
+    "Year": "2016",
+    "Venue": {
+      "isOld": true,
+      "value": "SIGIR"
+    },
+    "Authors": [
+      "Yukun Zhao",
+      "Shangsong Liang",
+      "Zhaochun Ren",
+      "Jun Ma",
+      "Emine Yilmaz",
+      "Maarten de Rijke"
+    ],
+    "Type of Data": [
+      "Text",
+      "Time series",
+      "Graph data"
+    ],
+    "Type of Problem": [
+      "Model Inspection",
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "Other"
+    ],
+    "Type of Task": [
+      "Clustering"
+    ],
+    "Type of Explanation": [
+      "Prototypes"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "User clustering has been studied from different angles: behavior-based, to identify similar browsing or search patterns, and content-based, to identify shared interests. Once user clusters have been found, they can be used for recommendation and personalization. So far, content-based user clustering has mostly focused on static sets of relatively long documents. Given the dynamic nature of social media, there is a need to dynamically cluster users in the context of short text streams. User clustering in this setting is more challenging than in the case of long documents as it is difficult to capture the users' dynamic topic distributions in sparse data settings. To address this problem, we propose a dynamic user clustering topic model (or UCT for short). UCT adaptively tracks changes of each user's time-varying topic distribution based both on the short texts the user posts during a given time period and on the previously estimated distribution. To infer changes, we propose a Gibbs sampling algorithm where a set of word-pairs from each user is constructed for sampling. The clustering results are explainable and human-understandable, in contrast to many other clustering algorithms. For evaluation purposes, we work with a dataset consisting of users and tweets from each user. Experimental results demonstrate the effectiveness of our proposed clustering model compared to state-of-the-art baselines.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "acl/FysheTMM14",
+    "Title": "Interpretable Semantic Vectors from a Joint Model of Brain- and Text- Based Meaning.",
+    "url": "https://doi.org/10.3115/v1/p14-1046",
+    "Year": "2014",
+    "Venue": {
+      "isOld": true,
+      "value": "ACL"
+    },
+    "Authors": [
+      "Alona Fyshe",
+      "Partha Pratim Talukdar",
+      "Brian Murphy",
+      "Tom M. Mitchell"
+    ],
+    "Type of Data": [
+      "Time series",
+      "Text"
+    ],
+    "Type of Problem": [
+      "Model Inspection",
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "Other"
+    ],
+    "Type of Task": [
+      "Representation learning"
+    ],
+    "Type of Explanation": [
+      "Heatmap",
+      "Feature Importance"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Vector space models (VSMs) represent word meanings as points in a high dimensional space. VSMs are typically created using a large text corpora, and so represent word semantics as observed in text. We present a new algorithm (JNNSE) that can incorporate a measure of semantics not previously used to create VSMs: brain activation data recorded while people read words. The resulting model takes advantage of the complementary strengths and weaknesses of corpus and brain activation data to give a more complete representation of semantics. Evaluations show that the model 1) matches a behavioral measure of semantics more closely, 2) can be used to predict corpus data for unseen words and 3) has predictive power that generalizes across brain imaging technologies and across subjects. We believe that the model is thus a more faithful representation of mental vocabularies.",
+    "IsOld": true
+  },
+  {
+    "Paper-ID": "kdd/GhalwashRO14",
+    "Title": "Utilizing temporal patterns for estimating uncertainty in interpretable early decision making.",
+    "url": "https://doi.org/10.1145/2623330.2623694",
+    "Year": "2014",
+    "Venue": {
+      "isOld": true,
+      "value": "KDD"
+    },
+    "Authors": [
+      "Mohamed F. Ghalwash",
+      "Vladan Radosavljevic",
+      "Zoran Obradovic"
+    ],
+    "Type of Data": [
+      "Time series"
+    ],
+    "Type of Problem": [
+      "Outcome Explanation"
+    ],
+    "Type of Model to be Explained": [
+      "Any (for a specific task); model-agnostic",
+      "Other"
+    ],
+    "Type of Task": [
+      "Classification"
+    ],
+    "Type of Explanation": [
+      "Prototypes"
+    ],
+    "Method used to explain": [
+      "Interpretability built into the predictive model"
+    ],
+    "Should the paper be included?": "Yes",
+    "Should the paper be included with filter?": "Yes",
+    "Abstract": "Early classification of time series is prevalent in many time-sensitive applications such as, but not limited to, early warning of disease outcome and early warning of crisis in stock market. \\textcolor{black}{ For example,} early diagnosis allows physicians to design appropriate therapeutic strategies at early stages of diseases. However, practical adaptation of early classification of time series requires an easy to understand explanation (interpretability) and a measure of confidence of the prediction results (uncertainty estimates). These two aspects were not jointly addressed in previous time series early classification studies, such that a difficult choice of selecting one of these aspects is required. In this study, we propose a simple and yet effective method to provide uncertainty estimates for an interpretable early classification method. The question we address here is \"how to provide estimates of uncertainty in regard to interpretable early prediction.\" In our extensive evaluation on twenty time series datasets we showed that the proposed method has several advantages over the state-of-the-art method that provides reliability estimates in early classification. Namely, the proposed method is more effective than the state-of-the-art method, is simple to implement, and provides interpretable results.",
+    "IsOld": true
+  }
+]
