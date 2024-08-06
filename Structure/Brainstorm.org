@@ -1,12 +1,11 @@
-* Brainstorming for data and kategorization structure
-
-** Approach by Nauta et al.
-
-*** Paper Selection 
+# Brainstorming for data and categorization structure
+* Survey Paper
+** Nauta et al. 2023
+*** Paper Selection
 - Literature from 2014-2020
 - 12 conferences
 - Query: explain*|explanat*|interpret*
-- Serach on 04.05.2021: 606 Results
+- Search on 04.05.2021: 606 Results
 - Without workshop papers and tutorials: 494
 - After inclusion criterion 361: 
 #+BEGIN_QUOTE
@@ -15,19 +14,17 @@ learning model.
 #+END_QUOTE
 - only papers that introduce a new xai technique: 312
   - the reduced 49 papers were still concidered for evaluation metrics
-
 *** Categorization of the papers
 There were 6 dimensions for paper categorization:
-- Type of data (for us it will be time series only)
-- Type of predictive model
-- Type of method used for explanation
-- Type of explanation
-- Type of problem
-- Type of task
-
-*** XAI Explanation Quality Properties:
+- Type of data (time series, graph, image...)
+- Type of predictive model (NN, SVM, Tree Ensemble...)
+- Type of method used for to explain (built-in, post-hoc...)
+- Type of explanation (Heatmap, Feature Plot...)
+- Type of problem (Model explanation, outcome explanation...)
+- Type of task (classification, regression...)
+*** XAI Explanation Quality Properties
 The authors defined 12 quality properties to be examined:
-- Correceness
+- Correcteness
 - Completeness
 - Consistency
 - Continuity
@@ -39,10 +36,97 @@ The authors defined 12 quality properties to be examined:
 - Context
 - Coherence
 - Controllability
+*** General
+- Extensive approach focusing on finding trends and maybe blindspots in research
+- Due to the high volume, statistic evaluation is possible
+- Points to automated, quantitative evaluation methods (could be interesting for us -> TimeXAI)
+- Maybe cherry-pick from their quality properties?
+ 
+** Mohseni et al. 2021
+*** Paper Selection
+- choose from multiple disciplines: ML, HCI, Visualization, Psychology
+- iterative approach chosing 40 papers as a start and then doing upwards/downwards literature research with some refinement, resulting in 226 papers
+- keywords: interpretability, explainability, intelligibility, transparency, algorithmic decision-making, fairness, trust, mental model, and debugging in machine learning and intelligent systems
+*** Summary
+- derived a general framework from a more "distanced" view for a whole design process of an XAI system used by novices and experts alike
+- split design goals between novice users, data experts and AI experts
+- Introduce 5 evaluation measures for XAI systems
+- In general more HCI view
+*** General
+- HCI view might be interesting for TimeXAI, do we want to incorporate this?
+- iterative approach maybe interesting for us?
+- cherry-pick goals and evaluation measures?
+** Das & Rad 2020
+*** Paper selection:
+- focuses on milestone papers from the last 15 years
+- good overview over most interesting papers
+*** Main categorization:
+- Scope: Local/global explanations
+- Methodology: Perturbation/Backpropagation
+- Usage: Model-intrinsic/post-hoc
+*** Definitions:
+- Interpretability
+- Interpretation
+- Explanation
+- white-box
+- black-box
+- transparent
+- Trustability
+- Bias
+- Fairness
+*** Summary:
+- compares XAI methods directly based on methodology
+- most research focuses on model-agnostic post-hoc explainability due to easy integration and wide reach
+** Schwalbe & Finzel 2023
+- Reviewed 50 surveys on XAI in meta survey
+- there is no definite taxonomy for XAI
+- they tried to introduce one (pretty recent 01/2023), maybe we can adapt to this?
+  
+* Structuring our own paper
+** Paper collection:
+*** Large scale approach with database
++captures most papers and will result in an extensive amount of data
++enables statistic analysis
++best chances to get impulses for TimeXAI
++if done with a database approach might be a start for a knowledge database for the future
+-filtering and reading will be a lot
+-worst case many papers are not insignificant (=can't be discarded) but also not helpful
 
+*** Iterative approach
++hopefully less "bad" papers to read and include
++easier to focus on specific area in current research (e.g. time series)
+-where to start? Finding a start will take time (maybe look at Das & Rad 2020)
+-higher chance to miss important/interesting papers
 
+** Methodology:
+- We limit data to time series
+- Do we need other limitations?
+*** Paper categorization:
+- More specific categorization e.g. Nauta et. al.
+#+CAPTION: Categorization by Nauta et. al.
+#+NAME:   fig:nauta
+[[./NautaCategorization.png]]
+- More general categorization e.g. Das & Rad
+#+CAPTION: Categorization Das & Rad
+#+NAME:   fig:nauta
+[[./DasRadCategorization.png]]
 
+*** What to evaluate?
+- currently many surveys seem to struggle with taxonomy e.g. what is a "good" explanation and try to define qualaties for what is considered good
+- Stems more from HCI perspective, do we focus on it and how extended?
+- A (good?) overview is extracted by Schwalbe & Finzel
 
+#+CAPTION: Taxonomy by Schwalbe and Finzel
+#+NAME:   fig:taxo
+[[./SchwalbeFinzelTaxonomy.png]]
 
-
-** 
+** Organization:
+*** Create knowledge database (from dblp)
+- Search query "time explain | interpre | explanat | xai" yields 1002 results
+- Removing gray literature and everything before 2014 leaves 607 papers (including survey papers)
+- Papers are stored in .json file 
+*** Workflow
+- categorization should be done while reading/evaluating a paper
+- we should be able to work on the same database (share the papers between us 3)
+- best case: Annotated PDFs can be stored in database after reading and categorization, so others can take a look if useful
+- maybe build a small web application to fit our needs
